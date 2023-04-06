@@ -1,0 +1,64 @@
+.align_in_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  padding: 20px;
+  margin: 2px;
+}
+
+#delete {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  margin: 2px;
+}
+
+#clear {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  margin: 2px;
+}
+
+#send {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  margin: 2px;
+}
+
+#show_op {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 500px;
+  padding: 50px;
+  background-color: gray;
+}
+
+#show_result {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 500px;
+  height: 180px;
+  padding: 50px;
+  background-color: white;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+}
