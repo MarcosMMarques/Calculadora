@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js"></script>
+    <title>Calculadora</title>
+  </head>
+  <body id="teste">
+    <h1 class="align_in_center">Calculadora</h1>
+    <div id="show_result"><label>Resultados:</label></div>
+    <div id="show_op">
+      <script>
+        operation;
+      </script>
+    </div>
+    <div class="align_in_center">
+      <button class="buttons" onclick="show_operation('0');">0</button>
+      <button class="buttons" onclick="show_operation('1');">1</button>
+      <button class="buttons" onclick="show_operation('2');">2</button>
+      <button class="buttons" onclick="show_operation('3');">3</button>
+      <button class="buttons" onclick="show_operation('4');">4</button>
+      <button class="buttons" onclick="show_operation('5');">5</button>
+      <button class="buttons" onclick="show_operation('6');">6</button>
+      <button class="buttons" onclick="show_operation('7');">7</button>
+      <button class="buttons" onclick="show_operation('8');">8</button>
+      <button class="buttons" onclick="show_operation('9');">9</button>
+    </div>
+    <div class="align_in_center">
+      <button id="clear" onclick="show_operation('clear');">Limpar</button>
+      <button id="delete" onclick="show_operation('undo');">Desfazer</button>
+      <button class="buttons" onclick="show_operation('+');">+</button>
+      <button class="buttons" onclick="show_operation('-');">-</button>
+      <button class="buttons" onclick="show_operation('*');">*</button>
+      <button class="buttons" onclick="show_operation('/');">/</button>
+      <button class="buttons" onclick="show_operation('(');">(</button>
+      <button class="buttons" onclick="show_operation(')');">)</button>
+      <button id="send" onclick="result();">=</button>
+    </div>
+  </body>
+</html>
