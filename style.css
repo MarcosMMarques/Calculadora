@@ -25,7 +25,7 @@
   cursor: pointer;
   margin: 3px;
   background-color: rgb(31, 31, 31);
-  border: black;
+  border: 1px solid black;
   color: #fff;
 }
 .buttons:hover {
@@ -63,4 +63,11 @@
   padding: 5px;
   background-color: black;
   color: white;
+}
+
+.results {
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid rgb(17, 17, 17);
 }

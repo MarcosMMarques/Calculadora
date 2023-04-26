@@ -36,7 +36,18 @@ function showOperation(char) {
 }
 
 function showResult() {
-  showResultDiv.textContent = finalResultsArray[finalResultsArray.length - 1];
+  showResultDiv.textContent = "";
+  for (var i = 0; i < finalResultsArray.length; i++) {
+    var newDiv = document.createElement("div");
+    newDiv.innerHTML = finalResultsArray[i];
+    newDiv.className = "results";
+    newDiv.onclick = (function (index) {
+      return function () {
+        showOp.textContent = finalResultsArray[index];
+      };
+    })(i);
+    showResultDiv.appendChild(newDiv);
+  }
   showOperation("clear");
   showOperation(finalResultsArray[finalResultsArray.length - 1].toString());
 }

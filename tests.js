@@ -48,11 +48,17 @@ function tests() {
     stringOperation = testCases[i].operation;
     bracket();
     showResult();
-    if (showResultDiv.textContent == testCases[i].expected) {
+    if (
+      finalResultsArray[finalResultsArray.length - 1] == testCases[i].expected
+    ) {
       console.log(i + 1 + "º passed");
     } else {
       console.log(i + 1 + "º Not passed");
     }
-    console.log(showResultDiv.textContent + " = " + testCases[i].expected);
+    console.log(
+      finalResultsArray[finalResultsArray.length - 1] +
+        " = " +
+        testCases[i].expected
+    );
   }
 }
