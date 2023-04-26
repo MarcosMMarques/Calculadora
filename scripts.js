@@ -12,9 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const keyCode = event.keyCode || event.which;
     if (keyCode === 13) {
       stringOperation = showOp.textContent.trim();
-      // bracket();
-      result();
-      // showResult();
+      bracket();
+      showResult();
     }
   });
 });
