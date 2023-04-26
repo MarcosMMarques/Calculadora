@@ -9,34 +9,91 @@
     <script src="tests.js"></script>
     <title>Calculadora</title>
   </head>
-  <body id="teste">
-    <h1 class="align_in_center">Calculadora</h1>
-    <div id="show_result"><label>Resultados:</label></div>
-    <div contenteditable="true" id="show_op"></div>
-    <div class="align_in_center">
-      <button class="buttons" onclick="showOperation('0');">0</button>
-      <button class="buttons" onclick="showOperation('1');">1</button>
-      <button class="buttons" onclick="showOperation('2');">2</button>
-      <button class="buttons" onclick="showOperation('3');">3</button>
-      <button class="buttons" onclick="showOperation('4');">4</button>
-      <button class="buttons" onclick="showOperation('5');">5</button>
-      <button class="buttons" onclick="showOperation('6');">6</button>
-      <button class="buttons" onclick="showOperation('7');">7</button>
-      <button class="buttons" onclick="showOperation('8');">8</button>
-      <button class="buttons" onclick="showOperation('9');">9</button>
-      <button class="buttons" onclick="showOperation('.');">.</button>
-    </div>
-    <div class="align_in_center">
-      <button id="clear" onclick="showOperation('clear');">Limpar</button>
-      <button id="delete" onclick="showOperation('undo');">Desfazer</button>
-      <button class="buttons" onclick="showOperation('+');">+</button>
-      <button class="buttons" onclick="showOperation('-');">-</button>
-      <button class="buttons" onclick="showOperation('*');">*</button>
-      <button class="buttons" onclick="showOperation('/');">/</button>
-      <button class="buttons" onclick="showOperation('(');">(</button>
-      <button class="buttons" onclick="showOperation(')');">)</button>
-      <button class="buttons" onclick="tests();">tests</button>
-      <button id="send" onclick="bracket(); showResult();">=</button>
+
+  <body>
+    <div class="background">
+      <h1>Basic Calculator</h1>
+      <div class="calculator">
+        <div id="show_result"><label></label></div>
+        <div contenteditable="true" id="show_op"></div>
+        <table>
+          <tr>
+            <td>
+              <button class="buttons" onclick="showOperation('undo')"><</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('clear');">
+                C
+              </button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('(')">(</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation(')')">)</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="buttons" onclick="showOperation('7')">7</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('8')">8</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('9')">9</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('*')">*</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="buttons" onclick="showOperation('4')">4</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('5')">5</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('6')">6</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('/')">/</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="buttons" onclick="showOperation('1')">1</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('2')">2</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('3')">3</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('-')">-</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="buttons" onclick="showOperation('0')">0</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('.')">.</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="showOperation('+')">+</button>
+            </td>
+            <td>
+              <button class="buttons" onclick="bracket(); showResult();">
+                =
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <button id="test" onclick="tests();">tests</button>
     </div>
   </body>
 </html>
