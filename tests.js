@@ -39,6 +39,10 @@ function tests() {
       operation: ")1+1(",
       expected: "Expressão mal formulada",
     },
+    {
+      operation: "20*(3-2)+5/(10-(2+(10-7)))+3*(2+(3*5))-3*(7-1)",
+      expected: "54",
+    },
   ];
   for (let i = 0; i < testCases.length; i++) {
     stringOperation = testCases[i].operation;
